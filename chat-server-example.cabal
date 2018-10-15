@@ -1,0 +1,38 @@
+name:                chat-server-example
+version:             0.1
+synopsis:            Example chat server demonstrating async I/O and STM
+description:
+    A simple chat server demonstrating asynchronous I/O (via threads) and STM.
+    .
+    What it does:
+    .
+    * Listens for connections on port 1234.
+    .
+    * When a client connects, it asks for their name.
+    .
+    * If another client with the same name is already disconnected, that client
+      is kicked out to make way for the new client.
+    .
+    * Any lines the client sends are broadcast to all other clients.
+    .
+    * Connect and disconnect notices are broadcast as well.
+license:             BSD3
+license-file:        LICENSE
+author:              Adrien Tang
+maintainer:          adtang95@gmail.com
+category:            Concurrency
+build-type:          Simple
+cabal-version:       >=1.8
+
+
+executable chat-server-example
+    main-is: Main.hs
+
+    ghc-options: -Wall
+
+    other-extensions: RecordWildCards
+
+    build-depends: base >= 4.3 && < 5
+                 , containers
+                 , network
+                 , stm >= 2.3
