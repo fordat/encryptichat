@@ -20,7 +20,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Adrien Tang
 maintainer:          adtang95@gmail.com
-category:            Concurrency
+category:            Web
 build-type:          Simple
 cabal-version:       >=1.8
 
