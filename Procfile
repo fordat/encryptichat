@@ -1,1 +1,1 @@
-web: run-server
+web: Main.hs
