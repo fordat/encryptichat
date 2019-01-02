@@ -65,6 +65,7 @@ kickClient :: Client -> String -> STM ()
 kickClient Client{..} reason =
     writeTVar clientKicked $ Just reason
 
+-- create client at the server
 serve :: Server -> ClientId -> Handle -> IO ()
 serve server@Server{..} id handle = do
     hSetNewlineMode handle universalNewlineMode
