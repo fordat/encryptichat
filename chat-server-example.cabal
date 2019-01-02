@@ -14,8 +14,6 @@ description:
       is kicked out to make way for the new client.
     .
     * Any lines the client sends are broadcast to all other clients.
-    .
-    * Connect and disconnect notices are broadcast as well.
 license:             BSD3
 license-file:        LICENSE
 author:              Adrien Tang

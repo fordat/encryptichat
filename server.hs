@@ -2,7 +2,7 @@ import Network.Transport.TCP (createTransport, defaultTCPParameters)
 import Control.Distributed.Process
 import Control.Distributed.Process.Node
 
-
+-- establish at localhost
 main :: IO ()
 main = do
   Right transport <- createTransport "127.0.0.1" "4001" defaultTCPParameters
